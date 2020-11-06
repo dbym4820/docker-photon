@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="技術領域知識オントロジー_20200427.xml" ont_id="1587964563067ont" >
+<FILENAME_ONT>技術領域知識オントロジー_20200427.xml</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" x="0" y="0" />
+<CONCEPT id="1587964563067_n0" >
+<LABEL>Any</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="20" y="20"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563067_n1" >
+<LABEL>技術</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="312" y="103"/>
+<SLOTS>
+<SLOT id="1587967042000_s2" 
+ type="NW"  label="slot2"  kind="p/o"  num="1.."  role="基盤技術"  class_constraint="技術"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="技術" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s3" 
+ type="NW"  label="slot3"  kind="p/o"  num="0.."  role="関連（必要）技術"  class_constraint="技術"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="技術" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587964563067_s2" 
+ type="NW"  label="slot"  kind="a/o"  num="1.."  role="技術の目的Role"  class_constraint="課題を解決する"  rh_name="目的"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="課題を解決する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s5" 
+ type="NW"  label="slot4"  kind="a/o"  num="1.."  role="技術の性質Role"  class_constraint="性質"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="性質" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s6" 
+ type="NW"  label="slot5"  kind="a/o"  num="1.."  role="名称"  class_constraint="string"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="string" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563067_n3" >
+<LABEL>行為概念</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="126" y="295"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1587967042000_s8" 
+ type="NW"  label="slot3"  kind="p/o"  num="1.."  role="行為対象"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s9" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="事前状態"  class_constraint="状態"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="状態" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s10" 
+ type="NW"  label="slot2"  kind="p/o"  num="1.."  role="事後状態"  class_constraint="状態"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="状態" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563067_n4" >
+<LABEL>課題を解決する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="190" y="469"/>
+<SLOTS>
+<SLOT id="1587967042000_s12" 
+ type="OR"  label="slot3"  kind="p/o"  num="1.."  role="行為対象"  class_constraint="課題"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="行為概念$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="課題" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s13" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="事前の課題"  class_constraint="未解決状態"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="行為概念$slot"/>
+<SUB_L label="" def="" role_name="" class_const="未解決状態" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s14" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="事後の課題"  class_constraint="解決状態"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="行為概念$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="解決状態" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563067_n8" >
+<LABEL>課題</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="364" y="28"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n15" >
+<LABEL>性質</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="480" y="498"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n16" >
+<LABEL>長所</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="516" y="554"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n17" >
+<LABEL>短所</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="602" y="521"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n18" >
+<LABEL>技術課題</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="477" y="32"/>
+<SLOTS>
+<SLOT id="1587967042000_s20" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="主課題"  class_constraint="技術課題"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="技術課題" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s21" 
+ type="NW"  label="slot2"  kind="p/o"  num="0.."  role="副課題"  class_constraint="技術課題"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="技術課題" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1587966537000_rc22" label="同時解決が必要" ><POS x="708" y="92"/>
+<ARC label="課題１">技術課題$slot</ARC>
+<ARC label="課題２">技術課題$slot2</ARC>
+</R_CONST>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n19" >
+<LABEL>状態</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="28" y="135"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n20" >
+<LABEL>問題解決状態</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="8" y="191"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n21" >
+<LABEL>解決状態</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="75" y="251"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n22" >
+<LABEL>未解決状態</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="4" y="243"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n23" >
+<LABEL>普通の性質</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="575" y="560"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<ISA id="1587964563067_isa9" parent="Any" child="技術" />
+<ISA id="1587964563067_isa10" parent="Any" child="行為概念" />
+<ISA id="1587964563067_isa11" parent="行為概念" child="課題を解決する" />
+<ISA id="1587964563067_isa12" parent="Any" child="課題" />
+<ISA id="1587964563000_isa28" parent="Any" child="性質" />
+<ISA id="1587964563000_isa29" parent="性質" child="長所" />
+<ISA id="1587964563000_isa30" parent="性質" child="短所" />
+<ISA id="1587964563000_isa31" parent="課題" child="技術課題" />
+<ISA id="1587964563000_isa32" parent="Any" child="状態" />
+<ISA id="1587964563000_isa33" parent="状態" child="問題解決状態" />
+<ISA id="1587964563000_isa34" parent="問題解決状態" child="解決状態" />
+<ISA id="1587964563000_isa35" parent="問題解決状態" child="未解決状態" />
+<ISA id="1587964563000_isa36" parent="性質" child="普通の性質" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1587964563067_n13" bookmark="true" >
+<LABEL>TimeSeries</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="255" y="28"/>
+<SLOTS>
+<SLOT id="1587964563067_s14" 
+ type="NW"  label="slot"  kind="p/i"  num="1.."  role="Before"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587964563067_s15" 
+ type="NW"  label="slot2"  kind="p/i"  num="1.."  role="After"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587964563000_n40" >
+<LABEL>貢献する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="253" y="168"/>
+<SLOTS>
+<SLOT id="1587967042000_s45" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="主語概念"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s46" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="目的語概念"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1587966537000_n47" >
+<LABEL>同時解決が必要</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="251" y="314"/>
+<SLOTS>
+<SLOT id="1587967042000_s48" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="課題１"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1587967042000_s49" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="課題２"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="595.0" h="842.0" iw="559.0" ih="783.0" ix="18.0" iy="18.0" />
+<PRINTER_SETTINGS orientation="1" printername="LBP9200C" />
+</PRINTER>
+</OE_FILE>
